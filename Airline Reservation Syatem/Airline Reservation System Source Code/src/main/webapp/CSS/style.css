@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root{
+    --main-bg-color: brown;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    background-color: #f1f3f6;
+    color: #212121;
+    line-height: 1.4;
+    min-width: var(--width-min);
+    font-family: 'Ubuntu', sans-serif;
+}
+header{   
+    min-width: 978px;
+    position: relative;
+    background: #2874f0;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav{
+    display: flex;
+    position: fixed;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    will-change: transform;
+    width: 100%;
+    height: 56px;
+    background-color: #2874f0;
+    color: #f0f0f0;
+    z-index: 10;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 158px;
+    padding: 0 25px;
+}
+.travel{
+    display: flex;
+    align-items: center;
+    margin: 18px 12px;
+    height: 100%;
+    min-width: 155px;
+    margin-right: -50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
+svg{
+    margin-left: -35px;
+    margin-right: 2px;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 289px;
+    height: 27px;
+    border-radius: 5px; 
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+.search button:hover{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900px;
+    font-weight: bolder;
+}
+.login{
+    display: flex;
+    align-items: center;
+    margin-left: 212px;
+}
+.login button{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: white;
+    background: #2874f0;
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+main{
+    padding: 8px;
+}
+.container{
+    height: 100%;
+    margin-top: 53px;
+}
+.imagebox0{
+    min-width: 1280px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1680px;
+    padding: 8px;
+}
+.imagebox1{
+    padding: 0px;
+    display: block;
+    width: 100%;
+}
+.imagebox2{
+    min-height: 480px;
+    padding: 270px 64px 40px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.imagebox3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imagebox5{
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+}
+.imagebox6{
+    padding-top: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: none!important;
+}
+.getsetreal{
+    opacity: 1;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity .5s linear;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+.getsetreal2nd{
+    opacity: 0;
+    width: 100%;
+    filter: blur(15px);
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity .5s linear;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+.Travel1{
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.Travel2{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: visible;
+    padding: 24px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    position: relative;
+    width: 100%;
+}
+.Travel3{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.Travel4{
+    margin: 8px 0;
+}
+.Travel5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+.sameclass{
+    display: block;
+    cursor: auto;
+}
+.onewayclass2{
+    visibility: hidden;
+    position: absolute;
+}
+.onewayclass3{
+    display: inline-block;
+    border: 2px solid #979797;
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    vertical-align: top;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.onewayclass2:checked~.onewayclass3 {
+    border-color: #2874f0;
+}
+.onewayclass3::before{
+    content: "";
+    border-radius: 100%;
+    height: 8px;
+    width: 8px;
+    margin: auto;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.onewayclass4{
+    margin: 2px 16px 0 8px;
+    width: auto;
+    display: inline-block;
+}
+.sameclass:not(._3iI7Qn)
+{
+    display: block;
+}
+.sameclass{
+    display: block;
+}
+.roundtripclass1{
+    cursor: auto;
+}
+.roundtripclass2{
+    visibility: hidden;
+    position: absolute;
+}
+.roundtripclass3{
+    display: inline-block;
+    border: 2px solid #979797;
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    vertical-align: top;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.roundtripclass3::before{
+    content: "";
+    border-radius: 100%;
+    height: 8px;
+    width: 8px;
+    margin: auto;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.roundtripclass4{
+    margin: 2px 16px 0 8px;
+    width: auto;
+    display: inline-block;
+}
+.inputclass1 {
+    cursor: pointer;
+}
+.labelclass1 {
+    display: block;
+    cursor: pointer;
+    margin-left: 7px;
+}
+.inputclass2 {
+    cursor: pointer;
+    margin-left: 22px;
+}
+.labelclass2 {
+    display: block;
+    cursor: pointer;
+    margin-left: 7px;
+}
+.image{
+    display: flex;
+}
+.travelinfo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.travelinfo1{
+    display: flex;
+    width: inherit;
+}
+.travelinfo2:last-child {
+    margin-bottom: 0;
+}
+.travelinfo2{
+    min-height: 72px;
+    margin: 0 0 16px;
+    width: inherit;
+    display: flex;
+}
+.travelinfo2a{
+    display: -webkit-flex;
+    display: flex;
+    margin-right: 8px;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    max-width: 492px; 
+}
+.travelinfo2a1{
+    flex: 1;
+    max-width: 231.34px;
+}
+.travelinfo2a1a{
+    position: relative;
+    width: 100%;
+}
+.travelinfo2a1a1{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.travelinfo2a1a1inputclass{
+    padding-right: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 2px;
+    padding: 20px 16px 0 13px;
+    box-shadow: none;
+}
+.travelinfo2a1a2{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 0 0 4px #e0e0e0;
+    z-index: 1;
+    display: none;
+}
+.travelinfo2a1b{
+    color: #878787;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 12px;
+}
+.travelinfo2a3{
+    width: 247.34px
+}
+.travelinfo2a3a{
+    position: relative;
+    width: 100%;
+}
+.travelinfo2a3a1{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.travelinfo2a3a2{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 0 0 4px #e0e0e0;
+    z-index: 1;
+    display: none
+}
+.travelinfo2a3b{
+    color: #878787;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 12px
+}
+.travelinfo2b{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 254.33px;
+    margin-right: 8px;
+}
+.travelinfo2b1:hover{
+    border-color: #212121;
+}
+.travelinfo2b1{
+    cursor: pointer;
+    left: 50%;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+}
+.travelinfo2b2{
+    position: relative;
+    height: 50px;
+    width: 123.16px;
+    background:whitesmoke;
+}
+.travelinfo2b2a{
+    position: relative;
+    margin-bottom: 10px;
+    margin-bottom: 0;
+}
+.travelinfo2b2ainputclass{
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #0f0e0e;
+    outline: none;
+    border-radius: 2px;
+    padding: 20px 16px 0 13px;
+    box-shadow: none;
+}
+.travelinfo2b2alabelclass{
+    transform: translateY(-15%) scale(.815);
+    padding: 18px 0 0 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    padding: 18px 20px 0;
+    font-size: 14px;
+    color: #878787be;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease,-webkit-transform .2s ease;
+    pointer-events: none;
+    width: 100%;
+}
+.travelinfo2b3:last-child{
+    margin-left: 8px;
+}
+.travelinfo2b3{
+    position: relative;
+    height: 50px;
+    width: 123.16px;
+    background: rgba(243, 246, 246, 0.985);
+}
+.travelinfo2b3a{
+    margin-bottom: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+.travelinfo2b3ainputclass{
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 2px;
+    padding: 20px 16px 0 13px;
+    box-shadow: none;
+}
+.travelinfo2b3alabelclass{
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    padding: 18px 20px 0;
+    font-size: 14px;
+    color: #878787;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease,-webkit-transform .2s ease;
+    pointer-events: none;
+    width: 100%;
+}
+.travelinfo2b3b{
+    top: calc(100% + 16px);
+    visibility: visible;
+    pointer-events: auto;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    opacity: 1;
+    position: absolute;
+    top: auto;
+    left: auto;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    padding: 8px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    color: #fff;
+    background: #212121;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.4;
+    z-index: 5;
+    max-width: 568px;
+    min-width: 40px;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-filter: none;
+    filter: none;
+}
+.travelinfo2c{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 240px;
+    margin-right: 6px;
+}
+.travelinfo2c1{
+    top: 20px;
+    left: 50%;
+    display: inline-block;
+    position: relative;
+}
+.travelinfo2c2{
+    width: 240px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.travelinfo2c2inputclass{
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 2px;
+    padding: 20px 16px 0 13px;
+    box-shadow: none;
+}
+.travelinfo2c2labelclass{
+    -webkit-transform: translateY(-15%) scale(.815);
+    transform: translateY(-15%) scale(.815);
+    padding: 18px 0 0 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    padding: 18px 20px 0;
+    font-size: 14px;
+    color: #878787;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease,-webkit-transform .2s ease;
+}
+.travelinfo2d{
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border: none;
+    width: 137px;
+    height: 50px;
+    cursor: pointer;
+}
+.Topdealsoftheday{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    -webkit-filter: none!important;
+    filter: none!important;
+}
+.Topdealsofthedayimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity .5s linear
+}
+a, img {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+.Topdealsofthedayimg1{
+    opacity: 0;
+    width: 100%;
+    filter: blur(15px);
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity .5s linear;
+}
+.topdealsofferlist1{
+    background-color: rgb(255, 255, 255);
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    height: 234.05px;
+}
+.topdealsofferlist1a{
+    padding-left: 0;
+    padding-right: 8px;
+    padding: 0 4px;
+    width: 33.13%;
+    display: inline-block;
+    vertical-align: top;
+}
+.topdealsofferlist1ahrefclass{
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 8%);
+    overflow: hidden;
+}
+.topdealsofferlist1ahrefclass1{
+    padding-top: 53.646%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-filter: none!important;
+    filter: none!important;
+}
+.topdealsofferlist1ahrefclass1img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity .5s linear;
+}
+.topdealsalllistapply{
+    opacity: 0;
+    width: 100%;
+    filter: blur(15px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity .5s linear;
+}
+.topdealsofferlist1b{
+    padding: 0 4px;
+    width: 33.13%;
+    display: inline-block;
+    vertical-align: top;
+}
+.topdealsofferlist1c{
+    padding-right: 0;
+    padding-left: 8px;
+    padding: 0 4px;
+    width: 33.13%;
+    display: inline-block;
+    vertical-align: top;
+}
+.topdealsofferlist2{
+    background-color: rgb(255, 255, 255);
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    height: 234.05px;
+}
+.alert{
+    height: 191.81px;
+    width: 1333px;
+    margin-top: 4vh;
+    margin-left: 2vh;
+}
+.thankstoonlineportal{
+    margin: 8px 0;
+}
+.thankstoonlineportal1{
+    margin-top: 10px;
+    color: #878787;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.thankstoonlineportal2{
+    clear: both;
+    line-height: 1.45;
+    font-size: 12px;
+}
+footer{
+    display: flex;
+    height: 12vh;
+    background-color: #2874f0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
